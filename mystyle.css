@@ -446,155 +446,164 @@ h4 {
         }
 /* sahil */
 /*    pushpal        */
-#page{
-    font-family: 'IBM Plex Sans', sans-serif;
-    cursor: pointer;
-}
+        #page{
+            font-family: 'IBM Plex Sans', sans-serif;
+            cursor: pointer;
+            height: 100%;
+            grid-template-areas: "sdb1 sdb2 sdb3";
+        }
 
-.topNav{
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0%;
-    z-index: 1;
-}
+        .topNav{
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+        }
 
-.fathomLogo{
-    width:140px;
-    position: absolute;
-    left: 15%;
-    top:10%;
-    padding: 10px;
-}
+        .fathomLogo{
+            width:140px;
+            position: absolute;
+            left: 15%;
+            top:10%;
+            padding: 10px;
+        }
 
-.rightLinks{
-    position: absolute;
-    top:20%;
-    right: 15%;
-    justify-content: center;
-    color: black;
-}
+        #rightLinks{
+            position: absolute;
+            top:20%;
+            right: 15%;
+            justify-content: center;
+            color: black;
+        }
 
-.rightLinks > a{
-    margin: 10px;
-    color: black;
-    font-weight: bold;
-}
+        #rightLinks > a{
+            text-decoration: none;
+            margin: 10px;
+            color: black;
+            font-weight: bold;
+        }
 
-.chatBot{
-    max-width:60px;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 5%;
-    left:95%;
-    z-index: 10;   
-}
+        .chatBot{
+            max-width:60px;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 5%;
+            left:95%;
+            z-index: 10;   
+        }
 
-.messageLogo{
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    margin: auto;
-}
+        .messageLogo{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            margin: auto;
+        }
 
-.largeDescContainer{
-    height: 500px;
-    width: 100%;
-    padding-top: 15%;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    color: white;
-    text-align: center;
-}
+        .largeDescContainer{
+            min-height: 500px;
+            width: 100%;
+            padding-top: 5%;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            color: white;
+            text-align: center;
+        }
+        .headingContainer{
+            max-width: 1200px;
+            margin: auto;
+            font-size: 30px;
+        }
 
-.largestText{
-    font-size: 80px;
-    font-weight: 400;
-    line-height: 0%;
-    margin-top: 0%;
-}
+        .headingContainerButton{
+            width: 100%;
+        }
 
-.subHeadingText{
-    font-size: 30px;
-    font-weight: 100;
-}
+        .article{
+            position: absolute;
+            background-color: whitesmoke;
+            color: grey;
+            padding-top: 10px;
+            width: 99%;
+            height: 60px;
+            margin: 20px auto;
+        }
 
-.headingContainer{
-    max-width: 60%;
-    margin: auto;
-}
+        .article > div {
+            margin: 10px auto;
+            width: 100%;
+            font-size: 25px;
+            text-align: center;
+        }
 
-.headingContainerButton{
-    width: 100%;
-}
+        #headingContainerButton{
+            width: 150px;
+            height: 50px;
+            background-color: white;
+            color:rgb(181, 115, 243);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
-.article{
-    position: absolute;
-    background-color: whitesmoke;
-    color: grey;
-    padding-top: 10px;
-    width: 99%;
-    height: 60px;
-    margin: 20px auto;
-}
+        .dotImg {
+            position: absolute;
+            top:50%;
+            left: 2%;
+        }
 
-.article > div {
-    margin: 10px auto;
-    width: 100%;
-    font-size: 25px;
-    text-align: center;
-}
+        .dotImg > img{
+            height: 200px;
+            width: 180px;
+        }
 
-#headingContainerButton{
-    width: 150px;
-    height: 50px;
-    background-color: white;
-    color:rgb(181, 115, 243);
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-}
+        .servicesDescBox{
+            float: left;
+            margin: auto;
+            width: 33%;
+        }
 
-.dotImg {
-    position: absolute;
-    top:62%;
-    left: 2%;
-}
+        .smallGreyText {
+            color: grey;
+            font-size: 20px;
+            text-align: center;
+        }
+        
 
-.dotImg > img{
-    height: 200px;
-    width: 180px;
-}
+        .servicesBox {
+            text-align: center;
+            margin: 10% auto;
+            border-radius: 1px solid red; 
+        }
 
-.servicesDescBox{
-    margin: auto;
-    width: 33%;
-    float: left;
-}
+        .serviceHeadings{
+            line-height: 5%;
+            font-weight: bold;
+        }
+        .servicesBoxHeading{
+            font-size: 40px;
+        }
 
-.smallGreyText {
-    color: grey;
-    text-align: center;
-}
+        .serviceBoxContainer{
+            height: 250px;
+            max-width: 1200px;
+            margin: 2% auto;
+        }
+        #rightLinks > a:nth-child(7){
+            display: none;
+        }
+        rightLinks.responsive {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
 
-.servicesBox {
-    text-align: center;
-    margin: 5% auto;
-    border-radius: 1px solid white; 
-}
-
-.serviceHeadings{
-    line-height: 5%;
-    font-weight: bold;
-}
-.servicesBoxHeading{
-    font-size: 40px;
-}
-
-.serviceBoxContainer{
-    height: 250px;
-    max-width: 900px;
-    margin: 1% auto;
-}
+        @media screen and (max-width: 980px) {
+            #rightLinks > a:not(:nth-child(7)){
+                display: none;
+            }
+            #rightLinks > a:nth-child(7){
+                display: block;
+            }
 /*  pushpal */
