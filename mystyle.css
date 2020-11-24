@@ -389,14 +389,16 @@ height:50%;
 margin:7vh 20px 0px;
 grid-area: lB1;
 padding:3%;
+text-align:left;
 
 }
 #lBottGrid2{
 
-height:50%;
-margin:10vh 20px 0px;
-grid-area: lB2;
-padding:3%;
+    height:50%;
+    margin:10vh 20px 0px;
+    grid-area: lB2;
+    padding:3%;
+    text-align:left;
 
 }
 #lBottGrid3{
@@ -405,6 +407,7 @@ height:50%;
 margin:10vh 20px 0px;
 grid-area: lB3;
 padding:3%;
+text-align:left;
 
 }
 #lBottGrid4{
@@ -413,6 +416,7 @@ height:50%;
 margin:10vh 20px 0px;
 grid-area: lB4;
 padding:3%;
+text-align:left;
 
 }
 #lBottGrid5{
@@ -421,6 +425,7 @@ height:50%;
 margin:9.2vh 20px 0px;
 grid-area: lB5;
 padding:3%;
+text-align:left;
 
 }
 #lBottGrid6{
