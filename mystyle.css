@@ -1,5 +1,4 @@
 #page{
-    height: 2000px;
     font-family: 'IBM Plex Sans', sans-serif;
     cursor: pointer;
 }
@@ -10,8 +9,8 @@
     background-color: white;
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
-    z-index: 10;
+    top: 0%;
+    z-index: 1;
 }
 
 .fathomLogo{
@@ -55,15 +54,17 @@
 .largeDescContainer{
     height: 500px;
     width: 100%;
+    padding-top: 15%;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     color: white;
-    margin-top: 5%;
     text-align: center;
 }
 
 .largestText{
     font-size: 80px;
     font-weight: 400;
+    line-height: 0%;
+    margin-top: 0%;
 }
 
 .subHeadingText{
@@ -73,7 +74,7 @@
 
 .headingContainer{
     max-width: 60%;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .headingContainerButton{
@@ -109,7 +110,7 @@
 
 .dotImg {
     position: absolute;
-    top:48%;
+    top:62%;
     left: 2%;
 }
 
