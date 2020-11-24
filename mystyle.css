@@ -295,8 +295,8 @@ h4 {
     height: 700px;
     grid-row-gap: 0;
     grid-column-gap: 0;
-    grid-template-columns: 422px 422px 422px;
-    grid-template-rows: 350px 350px 350px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     /* border: 1px solid black; */
     position:relative;
     top: 0%;
