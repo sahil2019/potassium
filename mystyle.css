@@ -1,3 +1,266 @@
+
+/*  sahil*/
+            .lastContainer{
+               
+                width:100%;
+                position:relative;
+            
+            }
+            .lastTop{
+                width:100%;
+                background-color: whitesmoke;
+               
+                text-align: center;
+                padding-bottom: 10%;
+            }
+            .lastTop > h1{
+                font-size:60px;
+            }
+            .lastTop > p{
+                color:gray;
+                margin-top:-3%;
+                font-size: 33px;
+                
+            }
+            
+            #lFirst{
+                width:90%;
+                
+                grid-area: lF;
+                margin-left:20px;
+                text-align: left;
+            
+              
+            }
+            #lSecond{
+                width:90%;
+                
+                grid-area: lS;
+                text-align: left;
+                margin-left:20px;
+            }
+            #lThird{
+                 width:90%;
+                
+                grid-area: lT;
+                text-align: left;
+                margin-left:20px;
+            }
+            .lImgBox{
+                width:100%;
+                height:200px;
+            }
+            .lastGrid  p{
+                color:gray;
+                margin-left:4%;
+                
+            }
+            .lastGrid  h2{
+                margin-left: 4%;
+            
+            }
+            #lFlexBox1{
+               
+                flex-basis:40%;
+                height:40%;
+                margin-top: 40px;
+                padding-left: 4%;
+                font-size: 22px;
+            }
+            #lFlexBox2{
+                
+                height:25%;
+                flex-basis: 17%;
+                border:2px solid rgb(132, 88, 175);
+                color:rgb(132, 88, 175);
+                border-radius: 25px;
+                margin-top: 70px;
+                text-align: center;
+                
+            }
+            #lFlexBox3{
+                
+                height:25%;
+                flex-basis: 17%;
+               
+                color:white;
+                background-color: rgb(132, 88, 175);
+                text-align: center;
+                margin-top: 70px;
+                border-radius: 25px;
+                margin-right:8%;
+            }
+            @media only screen and (max-width: 900px) {
+                .lastGrid{
+                display: grid;
+                grid-template-areas: "lF" 
+                                    "lS "
+                                    "lT";
+                
+               
+                grid-gap:1%;
+                width:90%;
+                margin:auto;
+                background-color: white;
+                
+            
+            }
+            .lastMid{
+                width:100%;
+                height:40%;
+                justify-content: space-between;
+                border:1px solid black;
+                text-align: left;
+                display:flex;
+                flex-direction: column;
+               
+            }
+            #lFlexBox1{
+               
+               flex-basis:40%;
+               height:40%;
+               /* margin-top: 40px; */
+               padding-left: 4%;
+               font-size: 22px;
+               margin:auto;
+           }
+            #lFlexBox2{
+                
+                height:25%;
+                width:70%;
+                border:2px solid rgb(132, 88, 175);
+                color:rgb(132, 88, 175);
+                border-radius: 25px;
+                /* margin-top: 70px; */
+                text-align: center;
+                margin: 10px auto;
+                
+            }
+            #lFlexBox3{
+                
+                height:25%;
+                width:70%;
+               
+                color:white;
+                background-color: rgb(132, 88, 175);
+                text-align: center;
+                
+                border-radius: 25px;
+                /* margin-top: 70px;
+                margin-right:8%; */
+                margin: 10px auto;
+            }
+            
+        }
+            
+            
+
+            @media only screen and (min-width: 900px) {
+                .lastGrid{
+                display: grid;
+                grid-template-areas: "lF lS lT";
+               
+                grid-gap:1%;
+                width:90%;
+                margin:auto;
+                background-color: white;
+                
+            
+            }
+        
+            .lastMid{
+                width:100%;
+                height:200px;
+                justify-content: space-between;
+               
+                text-align: left;
+                display:flex;
+                flex-direction: row;
+                
+            }
+             
+        }
+        .lastBottom{
+           
+            background-color:black;
+            display:grid;
+            height:400px;
+            grid-template-areas: "lB1 lB1 lB2 lB3 lB4 lB5"
+                                    "lB6 lB6 lB6 lB6 lB6 lB6";
+            
+        }
+        #lBottGrid1{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB1;
+            padding:3%;
+        }
+        #lBottGrid2{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB2;
+            padding:3%;
+        }
+        #lBottGrid3{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB3;
+            padding:3%;
+        }
+        #lBottGrid4{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB4;
+            padding:3%;
+        }
+        #lBottGrid5{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB5;
+            padding:3%;
+        }
+        #lBottGrid6{
+           
+            height:20%;
+            margin-top: -10vh;
+            grid-area: lB6;
+            padding:3%;
+            text-align: center;
+        }
+        
+        #lBottGrid1 > p:nth-child(1){
+            color:white;
+            font-size: 30px;
+        }
+        #lBottGrid1 > p{
+            color:rgb(59, 52, 52);
+        }
+        .lastBottom p{
+            color:white;
+        }
+        #lBottGrid2 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        #lBottGrid3 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        #lBottGrid4 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        #lBottGrid5 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        .lImgBox{
+         
+            color:white;
+        }
+/* sahil */
+/*    pushpal        */
 #page{
     font-family: 'IBM Plex Sans', sans-serif;
     cursor: pointer;
@@ -149,3 +412,4 @@
     max-width: 900px;
     margin: 1% auto;
 }
+/*  pushpal */
