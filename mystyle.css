@@ -1,3 +1,4 @@
+/* Rizwan */
 #container {
     display:grid;
     width: 100%;
@@ -181,3 +182,419 @@ h4 {
     top: 0%;
     left: 45%;
 }
+/*   Rizwan
+ */
+/*  sahil*/
+            .lastContainer{
+               
+                width:100%;
+                position:relative;
+            
+            }
+            .lastTop{
+                width:100%;
+                background-color: whitesmoke;
+               
+                text-align: center;
+                padding-bottom: 10%;
+            }
+            .lastTop > h1{
+                font-size:60px;
+            }
+            .lastTop > p{
+                color:gray;
+                margin-top:-1%;
+                font-size: 33px;
+                
+            }
+            
+            #lFirst{
+                width:90%;
+                
+                grid-area: lF;
+                margin-left:20px;
+                text-align: left;
+            
+              
+            }
+            #lSecond{
+                width:90%;
+                
+                grid-area: lS;
+                text-align: left;
+                margin-left:20px;
+            }
+            #lThird{
+                 width:90%;
+                
+                grid-area: lT;
+                text-align: left;
+                margin-left:20px;
+            }
+            .lImgBox{
+                width:100%;
+                height:200px;
+            }
+            .lastGrid  p{
+                color:gray;
+                margin-left:4%;
+                
+            }
+            .lastGrid  h2{
+                margin-left: 4%;
+            
+            }
+            #lFlexBox1{
+               
+                flex-basis:40%;
+                height:40%;
+                margin-top: 40px;
+                padding-left: 4%;
+                font-size: 22px;
+            }
+            #lFlexBox2{
+                
+                height:25%;
+                flex-basis: 17%;
+                border:2px solid rgb(132, 88, 175);
+                color:rgb(132, 88, 175);
+                border-radius: 25px;
+                margin-top: 70px;
+                text-align: center;
+                
+            }
+            #lFlexBox3{
+                
+                height:25%;
+                flex-basis: 17%;
+               
+                color:white;
+                background-color: rgb(132, 88, 175);
+                text-align: center;
+                margin-top: 70px;
+                border-radius: 25px;
+                margin-right:8%;
+            }
+            @media only screen and (max-width: 900px) {
+                .lastGrid{
+                display: grid;
+                grid-template-areas: "lF" 
+                                    "lS "
+                                    "lT";
+                
+               
+                grid-gap:1%;
+                width:90%;
+                margin:auto;
+                background-color: white;
+                
+            
+            }
+            .lastMid{
+                width:100%;
+                height:40%;
+                justify-content: space-between;
+                border:1px solid black;
+                text-align: left;
+                display:flex;
+                flex-direction: column;
+               
+            }
+            #lFlexBox1{
+               
+               flex-basis:40%;
+               height:40%;
+               /* margin-top: 40px; */
+               padding-left: 4%;
+               font-size: 22px;
+               margin:auto;
+           }
+            #lFlexBox2{
+                
+                height:25%;
+                width:70%;
+                border:2px solid rgb(132, 88, 175);
+                color:rgb(132, 88, 175);
+                border-radius: 25px;
+                /* margin-top: 70px; */
+                text-align: center;
+                margin: 10px auto;
+                
+            }
+            #lFlexBox3{
+                
+                height:25%;
+                width:70%;
+               
+                color:white;
+                background-color: rgb(132, 88, 175);
+                text-align: center;
+                
+                border-radius: 25px;
+                /* margin-top: 70px;
+                margin-right:8%; */
+                margin: 10px auto;
+            }
+            
+        }
+            
+            
+
+            @media only screen and (min-width: 900px) {
+                .lastGrid{
+                display: grid;
+                grid-template-areas: "lF lS lT";
+               
+                grid-gap:1%;
+                width:90%;
+                margin:auto;
+                background-color: white;
+                
+            
+            }
+        
+            .lastMid{
+                width:100%;
+                height:200px;
+                justify-content: space-between;
+               
+                text-align: left;
+                display:flex;
+                flex-direction: row;
+                
+            }
+             
+        }
+        .lastBottom{
+           
+            background-color:black;
+            display:grid;
+            height:400px;
+            grid-template-areas: "lB1 lB1 lB2 lB3 lB4 lB5"
+                                    "lB6 lB6 lB6 lB6 lB6 lB6";
+            
+        }
+        #lBottGrid1{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB1;
+            padding:3%;
+        }
+        #lBottGrid2{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB2;
+            padding:3%;
+        }
+        #lBottGrid3{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB3;
+            padding:3%;
+        }
+        #lBottGrid4{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB4;
+            padding:3%;
+        }
+        #lBottGrid5{
+           
+            height:50%;
+            margin:10vh 20px;
+            grid-area: lB5;
+            padding:3%;
+        }
+        #lBottGrid6{
+           
+            height:20%;
+            margin-top: -10vh;
+            grid-area: lB6;
+            padding:3%;
+            text-align: center;
+        }
+        
+        #lBottGrid1 > p:nth-child(1){
+            color:white;
+            font-size: 30px;
+        }
+        #lBottGrid1 > p{
+            color:rgb(59, 52, 52);
+        }
+        .lastBottom p{
+            color:white;
+        }
+        #lBottGrid2 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        #lBottGrid3 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        #lBottGrid4 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        #lBottGrid5 > p:nth-child(1){
+            color:rgb(59, 52, 52);
+        }
+        .lImgBox{
+         
+            color:white;
+        }
+/* sahil */
+/*    pushpal        */
+#page{
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+}
+
+.topNav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.fathomLogo{
+    width:140px;
+    position: absolute;
+    left: 15%;
+    top:10%;
+    padding: 10px;
+}
+
+.rightLinks{
+    position: absolute;
+    top:20%;
+    right: 15%;
+    justify-content: center;
+    color: black;
+}
+
+.rightLinks > a{
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.chatBot{
+    max-width:60px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 5%;
+    left:95%;
+    z-index: 10;   
+}
+
+.messageLogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.largeDescContainer{
+    height: 500px;
+    width: 100%;
+    padding-top: 15%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: white;
+    text-align: center;
+}
+
+.largestText{
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 0%;
+    margin-top: 0%;
+}
+
+.subHeadingText{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.headingContainer{
+    max-width: 60%;
+    margin: auto;
+}
+
+.headingContainerButton{
+    width: 100%;
+}
+
+.article{
+    position: absolute;
+    background-color: whitesmoke;
+    color: grey;
+    padding-top: 10px;
+    width: 99%;
+    height: 60px;
+    margin: 20px auto;
+}
+
+.article > div {
+    margin: 10px auto;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+#headingContainerButton{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color:rgb(181, 115, 243);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dotImg {
+    position: absolute;
+    top:62%;
+    left: 2%;
+}
+
+.dotImg > img{
+    height: 200px;
+    width: 180px;
+}
+
+.servicesDescBox{
+    margin: auto;
+    width: 33%;
+    float: left;
+}
+
+.smallGreyText {
+    color: grey;
+    text-align: center;
+}
+
+.servicesBox {
+    text-align: center;
+    margin: 5% auto;
+    border-radius: 1px solid white; 
+}
+
+.serviceHeadings{
+    line-height: 5%;
+    font-weight: bold;
+}
+.servicesBoxHeading{
+    font-size: 40px;
+}
+
+.serviceBoxContainer{
+    height: 250px;
+    max-width: 900px;
+    margin: 1% auto;
+}
+/*  pushpal */
