@@ -2,6 +2,8 @@
 #page{
     font-family: 'IBM Plex Sans', sans-serif;
     cursor: pointer;
+    height: 100%;
+    max-width: 100%;
 }
 
 .topNav{
@@ -22,7 +24,7 @@
     padding: 10px;
 }
 
-.rightLinks{
+#rightLinks{
     position: absolute;
     top:20%;
     right: 15%;
@@ -30,7 +32,8 @@
     color: black;
 }
 
-.rightLinks > a{
+#rightLinks > a{
+    text-decoration: none;
     margin: 10px;
     color: black;
     font-weight: bold;
@@ -53,9 +56,10 @@
 }
 
 .largeDescContainer{
-    height: 500px;
+    position: relative;
+    min-height: 500px;
     width: 100%;
-    padding-top: 15%;
+    padding-top: 5%;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     color: white;
     text-align: center;
@@ -70,14 +74,10 @@
     margin-left: -9%;
 }
 
-.subHeadingText{
-    font-size: 30px;
-    font-weight: 100;
-}
-
 .headingContainer{
-    max-width: 60%;
+    max-width: 1200px;
     margin: auto;
+    font-size: 30px;
 }
 
 .headingContainerButton{
@@ -113,8 +113,9 @@
 
 .dotImg {
     position: absolute;
-    top:90%;
-    left: 2%;
+    top:80%;
+    left: 1%;
+    z-index: 1;
 }
 
 .dotImg > img{
@@ -123,21 +124,22 @@
 }
 
 .servicesDescBox{
+    float: left;
     margin: auto;
     width: 33%;
-    float: left;
-    margin-top: 5%;
 }
 
 .smallGreyText {
     color: grey;
+    font-size: 20px;
     text-align: center;
 }
+
 
 .servicesBox {
     text-align: center;
     margin: 5% auto;
-    border-radius: 1px solid white; 
+    /* border: 1px solid black;  */
 }
 
 .serviceHeadings{
@@ -149,9 +151,46 @@
 }
 
 .serviceBoxContainer{
+    /* border: 1px solid red; */
     height: 250px;
-    max-width: 900px;
-    margin: 1% auto;
+    max-width: 1200px;
+    margin: 5% auto;
+}
+#rightLinks > a:nth-child(7){
+    display: none;
+}
+
+#rightLinks.responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.serviceLink{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: rebeccapurple;
+    background-color: white;
+    border: 3px solid rebeccapurple;
+}
+
+@media screen and (max-width: 980px) {
+    #rightLinks > a:not(:nth-child(7)){
+        display: none;
+    }
+    #rightLinks > a:nth-child(7){
+        display: block;
+    }
+}
+
+/* features to middle */
+.containerFeature{
+    position: relative;
+    /* border: 1px solid red; */
+    max-width: 80%;
+    margin: auto;
 }
 /*  pushpal */
 /* Rizwan */
@@ -224,21 +263,23 @@ h4 {
     width: 270px;
     height: 50px;
     position:absolute;
-    top: 233%;
-    left: 5%;
+    top: 85%;
+    left: -15%;
     z-index: 1;
 }
 #containerBenefits{
-    display: grid;
+    /* display: grid; */
     width: 100%;
 }
 #containerBenefits > .underBox {
+    display: grid;
     width: 95%;
     height:1000px;
     position: relative;
     top: 20%;
     left: 2.5%;
-    /* border: 1px solid black;*/
+    margin-top: 5%;
+    /* border: 1px solid black; */
 } 
 .sectionTitle{
     width: 100%;
@@ -291,13 +332,14 @@ h4 {
 }
 #containerBenefits > .underBox > .layoutGrid:nth-child(2n){
     display: grid;
-    width: 100%;
-    height: 700px;
+    margin: auto;
+    width: 70%;
+    height: 100%;
     grid-row-gap: 0;
     grid-column-gap: 0;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
     position:relative;
     top: 0%;
     left: 0%;
@@ -307,8 +349,8 @@ h4 {
     height: 250px;
     /* border: 1px solid black; */
     position:relative;
-    top: 13%;
-    left: 19%;
+    top: 2%;
+    left: 30%;
 }
 .centerdGridItem > img {
     position: relative;
@@ -337,279 +379,309 @@ h4 {
 .underBox .buttonOutline {
     border-radius: 50px;
     width: 200px;
+    background-color: white;
     height: 50px;
-    color: blue;
+    color: rebeccapurple;
+    font-weight: bold;
     position: relative;
+    border: 3px solid rebeccapurple;
+    cursor: pointer;
     top: 0%;
-    left: 40%;
+    left: 45%;
 }
 .image2 {
     width: 270px;
     height: 50px;
     position:absolute;
-    top: 426%;
-    right:0%;
+    top: 102%;
+    right:-2%;
     z-index: 1; 
 }
-/*   Rizwan
- */
-/*  sahil*/
-            .lastContainer{
-                margin-top: 20%;
-                width:100%;
-                position:relative;
-            }
-            .lastTop{
-                width:100%;
-                background-color: whitesmoke;
-                text-align: center;
-                /* padding-bottom: 12%; */
-            }
-            .lastTop > h1{
-                font-size:60px;
-            }
-            .lastTop > p{
-                color:gray;
-                margin-top:-1%;
-                font-size: 33px;
-                
-            }
-            
-            #lFirst{
-                width:90%;
-                
-                grid-area: lF;
-                margin-left:20px;
-                text-align: left;
-            
-              
-            }
-            #lSecond{
-                width:90%;
-                
-                grid-area: lS;
-                text-align: left;
-                margin-left:20px;
-            }
-            #lThird{
-                 width:90%;
-                
-                grid-area: lT;
-                text-align: left;
-                margin-left:20px;
-            }
-            .lImgBox{
-                width:100%;
-                height:200px;
-            }
-            .lastGrid  p{
-                color:gray;
-                margin-left:4%;
-                
-            }
-            .lastGrid  h2{
-                margin-left: 4%;
-            
-            }
-            #lFlexBox1{
-               
-                flex-basis:40%;
-                height:40%;
-                margin-top: 40px;
-                padding-left: 4%;
-                font-size: 22px;
-            }
-            #lFlexBox2{
-                
-                height:25%;
-                flex-basis: 17%;
-                border:2px solid rgb(132, 88, 175);
-                color:rgb(132, 88, 175);
-                border-radius: 25px;
-                margin-top: 70px;
-                text-align: center;
-                
-            }
-            #lFlexBox3{
-                
-                height:25%;
-                flex-basis: 17%;
-               
-                color:white;
-                background-color: rgb(132, 88, 175);
-                text-align: center;
-                margin-top: 70px;
-                border-radius: 25px;
-                margin-right:8%;
-            }
-            @media only screen and (max-width: 900px) {
-                .lastGrid{
-                display: grid;
-                grid-template-areas: "lF" 
-                                    "lS "
-                                    "lT";
-                
-               
-                grid-gap:1%;
-                width:90%;
-                margin:auto;
-                background-color: white;
-                
-            
-            }
-            .lastMid{
-                width:100%;
-                height:40%;
-                justify-content: space-between;
-                border:1px solid black;
-                text-align: left;
-                display:flex;
-                flex-direction: column;
-               
-            }
-            #lFlexBox1{
-               
-               flex-basis:40%;
-               height:40%;
-               /* margin-top: 40px; */
-               padding-left: 4%;
-               font-size: 22px;
-               margin:auto;
-           }
-            #lFlexBox2{
-                
-                height:25%;
-                width:70%;
-                border:2px solid rgb(132, 88, 175);
-                color:rgb(132, 88, 175);
-                border-radius: 25px;
-                /* margin-top: 70px; */
-                text-align: center;
-                margin: 10px auto;
-                
-            }
-            #lFlexBox3{
-                
-                height:25%;
-                width:70%;
-               
-                color:white;
-                background-color: rgb(132, 88, 175);
-                text-align: center;
-                
-                border-radius: 25px;
-                /* margin-top: 70px;
-                margin-right:8%; */
-                margin: 10px auto;
-            }
-            
-        }
-            
-            
+/* Rizwan */
 
-            @media only screen and (min-width: 900px) {
-                .lastGrid{
-                display: grid;
-                grid-template-areas: "lF lS lT";
-               
-                grid-gap:1%;
-                width:90%;
-                margin:auto;
-                background-color: white;
-                
-            
-            }
-        
-            .lastMid{
-                width:100%;
-                height:200px;
-                justify-content: space-between;
-               
-                text-align: left;
-                display:flex;
-                flex-direction: row;
-                
-            }
-             
-        }
-        .lastBottom{
-           
-            background-color:black;
-            display:grid;
-            height:400px;
-            grid-template-areas: "lB1 lB1 lB2 lB3 lB4 lB5"
-                                    "lB6 lB6 lB6 lB6 lB6 lB6";
-            
-        }
-        #lBottGrid1{
-           
-            height:50%;
-            margin:10vh 20px;
-            grid-area: lB1;
-            padding:3%;
-        }
-        #lBottGrid2{
-           
-            height:50%;
-            margin:10vh 20px;
-            grid-area: lB2;
-            padding:3%;
-        }
-        #lBottGrid3{
-           
-            height:50%;
-            margin:10vh 20px;
-            grid-area: lB3;
-            padding:3%;
-        }
-        #lBottGrid4{
-           
-            height:50%;
-            margin:10vh 20px;
-            grid-area: lB4;
-            padding:3%;
-        }
-        #lBottGrid5{
-           
-            height:50%;
-            margin:10vh 20px;
-            grid-area: lB5;
-            padding:3%;
-        }
-        #lBottGrid6{
-           
-            height:20%;
-            margin-top: -10vh;
-            grid-area: lB6;
-            padding:3%;
-            text-align: center;
-        }
-        
-        #lBottGrid1 > p:nth-child(1){
-            color:white;
-            font-size: 30px;
-        }
-        #lBottGrid1 > p{
-            color:rgb(59, 52, 52);
-        }
-        .lastBottom p{
-            color:white;
-        }
-        #lBottGrid2 > p:nth-child(1){
-            color:rgb(59, 52, 52);
-        }
-        #lBottGrid3 > p:nth-child(1){
-            color:rgb(59, 52, 52);
-        }
-        #lBottGrid4 > p:nth-child(1){
-            color:rgb(59, 52, 52);
-        }
-        #lBottGrid5 > p:nth-child(1){
-            color:rgb(59, 52, 52);
-        }
-        .lImgBox{
-         
-            color:white;
-        }
 /* sahil */
+.lastContainer{
+               
+    width:100%;
+    position:relative;
+    margin-top:40vh;
 
+}
+.lastTop{
+    width:100%;
+    background-color: whitesmoke;
+    
+    text-align: center;
+    padding-bottom:8%;
+    
+}
+.lastTop > h1{
+    font-size:60px;
+}
+.lastTop > p{
+    color:gray;
+    margin-top: -3%;
+    font-size: 33px;
+    
+}
+
+#lFirst{
+    width:90%;
+    
+    grid-area: lF;
+    margin-left:20px;
+    text-align: left;
+  
+}
+#lSecond{
+    width:90%;
+    
+    grid-area: lS;
+    text-align: left;
+    margin-left:20px;
+}
+#lThird{
+     width:90%;
+    
+    grid-area: lT;
+    text-align: left;
+    margin-left:20px;
+}
+.lImgBoxTop{
+    width:100%;
+    height:200px;
+}
+.lastGrid  p{
+    color:gray;
+    margin-left:4%;
+}
+.lastGrid  h2{
+    margin-left: 4%;
+}
+#lFlexBox1{
+   
+    flex-basis:40%;
+    height:40%;
+    margin-top: 40px;
+    padding-left: 4%;
+    font-size: 22px;
+}
+#lFlexBox2{
+    
+    height:25%;
+    flex-basis: 17%;
+    border:2px solid rgb(132, 88, 175);
+    color:rgb(132, 88, 175);
+    border-radius: 25px;
+    margin-top: 70px;
+    text-align: center;
+    
+}
+#lFlexBox3{
+    
+    height:25%;
+    flex-basis: 17%;
+   
+    color:white;
+    background-color: rgb(132, 88, 175);
+    text-align: center;
+    margin-top: 70px;
+    border-radius: 25px;
+    margin-right:8%;
+}
+@media only screen and (max-width: 900px) {
+    .lastGrid{
+    display: grid;
+    grid-template-areas: "lF" 
+                        "lS "
+                        "lT";
+    
+   
+    grid-gap:1%;
+    width:90%;
+    margin:auto;
+    background-color: white;
+    
+
+}
+.lastMid{
+    width:100%;
+    height:40%;
+    justify-content: space-between;
+    border:1px solid black;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+   
+}
+#lFlexBox1{
+   
+   flex-basis:40%;
+   height:40%;
+   /* margin-top: 40px; */
+   padding-left: 4%;
+   font-size: 22px;
+   margin:auto;
+}
+#lFlexBox2{
+    
+    height:25%;
+    width:70%;
+    border:2px solid rgb(132, 88, 175);
+    color:rgb(132, 88, 175);
+    border-radius: 25px;
+    /* margin-top: 70px; */
+    text-align: center;
+    margin: 10px auto;
+    
+}
+#lFlexBox3{
+    
+    height:25%;
+    width:70%;
+   
+    color:white;
+    background-color: rgb(132, 88, 175);
+    text-align: center;
+    
+    border-radius: 25px;
+    /* margin-top: 70px;
+    margin-right:8%; */
+    margin: 10px auto;
+}
+.lastBottom{
+
+    background-color:black;
+    display:grid;
+    grid-template-areas: "lB1 lB1"
+                            "lB2 lB3"
+                            "lB4 lB5"
+                            "lB6 lB6";
+
+}
+
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    .lastGrid{
+    display: grid;
+    grid-template-areas: "lF lS lT";
+   
+    grid-gap:1%;
+    width:90%;
+    margin:auto;
+    background-color: white;
+    
+
+}
+.lastBottom{
+
+    background-color:black;
+    display:grid;
+    grid-template-areas: "lB1 lB1 lB2 lB3 lB4 lB5"
+                                        "lB6 lB6 lB6 lB6 lB6 lB6";
+
+}
+
+.lastMid{ 
+    width:100%;
+    height:200px;
+    justify-content: space-between;
+   
+    text-align: left;
+    display:flex;
+    flex-direction: row;
+    
+}
+ 
+}
+
+#lBottGrid1{
+
+height:50%;
+margin:7vh 20px 0px;
+grid-area: lB1;
+padding:3%;
+text-align:left;
+
+}
+#lBottGrid2{
+
+    height:50%;
+    margin:10vh 20px 0px;
+    grid-area: lB2;
+    padding:3%;
+    text-align:left;
+
+}
+#lBottGrid3{
+
+height:50%;
+margin:10vh 20px 0px;
+grid-area: lB3;
+padding:3%;
+text-align:left;
+
+}
+#lBottGrid4{
+
+height:50%;
+margin:10vh 20px 0px;
+grid-area: lB4;
+padding:3%;
+text-align:left;
+
+}
+#lBottGrid5{
+
+height:50%;
+margin:9.2vh 20px 0px;
+grid-area: lB5;
+padding:3%;
+text-align:left;
+
+}
+#lBottGrid6{
+
+height:20%;
+margin-top: -2vh;
+grid-area: lB6;
+padding:3%;
+
+text-align: center;
+}
+
+#lBottGrid1 > p:nth-child(1){
+color:white;
+font-size: 30px;
+}
+#lBottGrid1 > p{
+color:rgb(59, 52, 52);
+}
+.lastBottom p{
+color:white;
+}
+#lBottGrid2 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+#lBottGrid3 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+#lBottGrid4 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+#lBottGrid5 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+.lImgBox{
+
+color:white;
+width:100%;
+
+height:5vh;
+}
+               
+          
+/* sahil */
