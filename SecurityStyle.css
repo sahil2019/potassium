@@ -5,6 +5,10 @@
     max-width: 100%;
 }
 
+ a:active, a:hover{
+    color: rgb(132, 88, 175);
+}
+
 .topNav{
     width: 100%;
     height: 60px;
@@ -31,7 +35,7 @@
     color: black;
 }
 
-#rightLinks > a{
+     a{
     text-decoration: none;
     margin: 10px;
     color: black;
@@ -184,6 +188,33 @@
     }
 }
 
+@media screen and (max-width: 900px){
+    .image1, .image2, .dotImg{
+        display: none;
+    }
+    .greySub > .textWithImg{
+        display: grid;
+        /* grid-template-columns: auto;
+        grid-template-rows: auto; */
+        grid-template-areas: "mi1"
+                             "mp1"  
+                             "mi2" 
+                             "mp2"        ;
+        grid-column-gap: 5%;
+    }
+    .greySub > .textWithImg> div{
+        margin: auto;
+    }
+    .grid-container >.textWithImgBottom{
+        width: 100%;
+        height: 25%;
+    }
+    .greyContainerBottom{
+        background-color:white !important;
+    }
+    
+} 
+
 
 .greyContainer{
     position: relative;
@@ -199,9 +230,25 @@
 }
 .textWithImg{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    /* grid-template-columns: auto auto;
+    grid-template-rows: auto auto; */
+    grid-template-areas: "mi1 mp1"
+                         "mi2 mp2"           ;
     grid-column-gap: 5%;
+}
+.midPara1{
+    display: grid;
+    grid-area: mp1;
+}
+.midImg1{
+    display: grid;
+    grid-area: mi1;
+}
+.midPara2{
+    grid-area: mp2;
+}
+.midImg2{
+    grid-area: mi2;
 }
 .greyHeadings > h2{
     font-size: 45px;
@@ -225,6 +272,8 @@
     margin: auto;
     max-width: 70%;
     padding: 5%;
+    min-height: 100%;
+    /* border: 1px solid black; */
 }
 
 .policyHeadings > h5{
@@ -250,22 +299,26 @@
     top:-2%;
     right: 0%;
 }
-
 .textWithImgBottom{
     height: 25%;
     width: 33%;
     float: left;
     /* border: 1px solid saddlebrown; */
-    display: grid;
-    grid-column-gap: 5%;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    display: flex;
+
 }
+/* .grid-container{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid green;
+    width:60%;
+} */
+
 .greyContainerBottom{
     background-color: whitesmoke;
     width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
+    /* border: 1px solid red; */
 }
 .greySubBottom{
     margin: auto;
