@@ -264,7 +264,8 @@
 .greyContainerBottom{
     background-color: whitesmoke;
     width: 100%;
-    padding: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .greySubBottom{
     margin: auto;
