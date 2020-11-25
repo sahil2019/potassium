@@ -1,0 +1,409 @@
+.teamMid1GridCont
+{
+    
+    text-align: center;
+    margin:17px 25px;
+}
+.teamMid1ImgBox{
+    height:119px;
+    width:119px;
+}
+.teamMid1GridCont > p{
+    color:grey;
+}
+.teamMid2{
+   padding-bottom: 10%;
+    
+    background-color: whitesmoke;
+    text-align: center;
+}
+.teamMid2 >p{
+    font-size: 30px;
+    color:gray;
+    margin-top: 5%;
+}
+
+.teamMid2ImgCont{
+  
+   text-align:center;
+   padding-top: 2%;
+   margin:3% 4%;
+
+}
+.teamMid2ImgBox > div:nth-child(3) > img{
+    width:80%;
+    padding-top:5%;
+}
+.teamMid2ImgBox > div:nth-child(2) > img{
+    width:40%;
+    padding-left:10%;
+}
+.teamMid2ImgBox > div:nth-child(1) > img{
+    width:65%;
+    padding-top:5%;
+}
+.teamMid2ImgBox > div:nth-child(2) > h4{
+    margin-top:9vh;
+}
+.teamMid2ImgBox > div:nth-child(3) > h4{
+    margin-top:16.8vh;
+}
+.teamMid2ImgBox > div:nth-child(1) > h4{
+    margin-top:10.4vh;
+}
+.teamMid3{
+ 
+    height:45vh;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.teamMid3Flex1{
+    
+    margin-top:10vh;
+    flex-basis: 70%;
+    height:40%;
+}
+.teamMid3Flex2{
+    
+    margin-top:15vh;
+    flex-basis: 17%;
+    height:20%;
+    background-color:rgb(168, 131, 206);
+    text-align:center;
+    border-radius: 30px;
+}
+.teamMid3Flex1 > h1{
+    margin-top:10px;
+    font-size: 50px;
+    font-weight: 20;
+}
+.teamMid3Flex1 > p{
+  color:gray;
+  margin-top: -2%;
+  font-size: 27px;
+
+}
+.lastBottom{
+
+background-color:black;
+margin-top: 4vh;
+display:grid;
+grid-template-areas: "lB1 lB1 lB2 lB3 lB4 lB5"
+                                   "lB6 lB6 lB6 lB6 lB6 lB6";
+
+}
+#lBottGrid1{
+
+height:50%;
+margin:7vh 20px 0px;
+grid-area: lB1;
+padding:3%;
+text-align:left;
+        }
+#lBottGrid2{
+
+height:50%;
+margin:10vh 20px 0px;
+grid-area: lB2;
+padding:3%;
+text-align:left;
+}
+#lBottGrid3{
+
+height:50%;
+margin:10vh 20px 0px;
+grid-area: lB3;
+padding:3%;
+text-align:left;
+}
+#lBottGrid4{
+
+height:50%;
+margin:10vh 20px 0px;
+grid-area: lB4;
+padding:3%;
+text-align:left;
+}
+#lBottGrid5{
+
+height:50%;
+margin:9.2vh 20px 0px;
+grid-area: lB5;
+padding:3%;
+text-align:left;
+}
+#lBottGrid6{
+
+height:20%;
+margin-top: -2vh;
+grid-area: lB6;
+padding:3%;
+
+text-align: center;
+}
+
+#lBottGrid1 > p:nth-child(1){
+color:white;
+font-size: 30px;
+}
+#lBottGrid1 > p{
+color:rgb(59, 52, 52);
+}
+.lastBottom p{
+color:white;
+}
+#lBottGrid2 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+#lBottGrid3 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+#lBottGrid4 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+#lBottGrid5 > p:nth-child(1){
+color:rgb(59, 52, 52);
+}
+.lImgBox{
+
+color:white;
+width:100%;
+
+height:5vh;
+}
+@media only screen and (max-width: 900px) {
+
+.teamMid1{
+    
+    margin-top:10vh;
+    display:grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto;
+
+}
+.teamMid3{
+    
+    display:flex;
+  
+    justify-content: space-around;
+    flex-direction: column ; 
+    
+}
+.teamMid3Flex1{
+   
+    margin-top:10vh;
+    flex-basis: 70%;
+    
+    text-align: center;
+}
+.teamMid3Flex2{
+   
+    margin:15vh auto 0px;
+    width:20%;
+    height:20%;
+    background-color:rgb(168, 131, 206);
+    text-align:center;
+    border-radius: 30px;
+}
+.lastBottom{
+
+
+margin-top: 4vh;
+display:grid;
+grid-template-areas:"lB1 lB1"
+                            "lB2 lB3"
+                            "lB4 lB5"
+                            "lB6 lB6";
+
+}
+#lBottGrid1{
+
+height:50%;
+margin:7vh 20px 0px;
+grid-area: lB1;
+padding:3%;
+text-align:center;
+        }
+#rightLinks > a:not(:nth-child(7)){
+display: none;
+}
+#rightLinks > a:nth-child(7){
+display: block;
+}
+.dotImg > img{
+/* height: 200px;
+width: 180px; */
+display:none;
+} 
+
+} 
+
+
+@media only screen and (min-width: 900px) {
+.teamMid1{
+    
+    margin-top:10vh;
+    display:grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+
+}
+.teamMid2ImgBox{
+   
+  
+   margin-top:10vh;
+   display:grid;
+   grid-template-columns: 35% 30% 30%;
+   grid-template-rows: auto;
+   
+}
+
+
+} 
+/* puspal */
+#page{
+font-family: 'IBM Plex Sans', sans-serif;
+cursor: pointer;
+height: 100%;
+max-width: 100%;
+}
+
+.topNav{
+width: 100%;
+height: 60px;
+background-color: white;
+position: -webkit-sticky;
+position: fixed;
+top: 0%;
+z-index: 1;
+}
+
+.fathomLogo{
+width:140px;
+position: absolute;
+left: 15%;
+top:10%;
+padding: 10px;
+}
+
+#rightLinks{
+position: absolute;
+top:20%;
+right: 6%;
+justify-content: center;
+color: black;
+}
+
+#rightLinks > a{
+text-decoration: none;
+margin: 10px;
+color: black;
+font-weight: bold;
+}
+
+.chatBot{
+max-width:60px;
+position: -webkit-sticky;
+position: fixed;
+bottom: 5%;
+left:95%;
+z-index: 10;   
+}
+
+.messageLogo{
+height: 50px;
+width: 50px;
+border-radius: 25px;
+margin: auto;
+}
+
+.largeDescContainer{
+position: relative;
+min-height: 500px;
+width: 100%;
+padding-top: 5%;
+background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+color: white;
+text-align: center;
+}
+
+.largestText{
+font-size: 80px;
+font-weight: 400;
+width: 120%;
+line-height: 0%;
+margin-top: 0%;
+margin-left: -9%;
+}
+
+.headingContainer{
+max-width: 1200px;
+margin: auto;
+font-size: 30px;
+
+}
+
+.headingContainerButton{
+width: 100%;
+}
+
+.article{
+position: absolute;
+background-color: whitesmoke;
+color: grey;
+padding-top: 10px;
+width: 97%;
+height: 10vh;
+margin:2% 1%;
+padding: 0.5%;
+}
+
+.article > div {
+margin: 10px auto;
+width: 100%;
+font-size: 25px;
+text-align: center;
+
+}
+.dotImg {
+position: absolute;
+top:80%;
+left: 1%;
+z-index: 1;
+}
+
+.dotImg > img{
+height: 200px;
+width: 180px;
+}
+#rightLinks > a:nth-child(7){
+display: none;
+}
+
+#rightLinks.responsive {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+#headingContainerButton{
+width: 150px;
+height: 50px;
+background-color: white;
+color:rgb(181, 115, 243);
+border-radius: 25px;
+cursor: pointer;
+font-weight: bold;
+border:0;
+}
+/* puspal */
+
+
+
+.meetTeam{
+  font-size: 30px;
+  margin: 27vh auto 0;
+  text-align: center;
+  font-size: 10vh;
+}
