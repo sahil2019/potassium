@@ -91,6 +91,7 @@
     padding-top: 10px;
     width: 99%;
     height: 60px;
+
     margin: 20px auto;
 }
 
@@ -143,7 +144,7 @@
 }
 
 .serviceHeadings{
-    line-height: 5%;
+
     font-weight: bold;
 }
 .servicesBoxHeading{
@@ -403,8 +404,7 @@ h4 {
 .lastContainer{
                
     width:100%;
-    position:relative;
-    margin-top:40vh;
+    /* margin-top:40vh; */
 
 }
 .lastTop{
@@ -431,6 +431,7 @@ h4 {
     grid-area: lF;
     margin-left:20px;
     text-align: left;
+    padding-bottom: 12%;
   
 }
 #lSecond{
@@ -439,6 +440,7 @@ h4 {
     grid-area: lS;
     text-align: left;
     margin-left:20px;
+    padding-bottom: 12%;
 }
 #lThird{
      width:90%;
@@ -446,6 +448,7 @@ h4 {
     grid-area: lT;
     text-align: left;
     margin-left:20px;
+    padding-bottom: 12%;
 }
 .lImgBoxTop{
     width:100%;
@@ -553,12 +556,21 @@ h4 {
 
     background-color:black;
     display:grid;
+    margin-top: 10vh;
     grid-template-areas: "lB1 lB1"
                             "lB2 lB3"
                             "lB4 lB5"
                             "lB6 lB6";
 
 }
+#lBottGrid1{
+           
+    height:50%;
+    /* margin:7vh 20px 0px; */
+    grid-area: lB1;
+    padding:3%;
+    text-align:center;
+             }
 
 }
 
@@ -595,18 +607,19 @@ h4 {
     flex-direction: row;
     
 }
+#lBottGrid1{
+
+    height:50%;
+    margin:7vh 20px 0px;
+    grid-area: lB1;
+    padding:3%;
+    text-align:left;
+    
+    }
  
 }
 
-#lBottGrid1{
 
-height:50%;
-margin:7vh 20px 0px;
-grid-area: lB1;
-padding:3%;
-text-align:left;
-
-}
 #lBottGrid2{
 
     height:50%;
