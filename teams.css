@@ -237,10 +237,11 @@ width: 180px; */
 display:none;
 } 
 
-} 
+}
 
 
 @media only screen and (min-width: 900px) {
+   
 .teamMid1{
     
     margin-top:10vh;
@@ -337,12 +338,7 @@ margin-top: 0%;
 margin-left: -9%;
 }
 
-.headingContainer{
-max-width: 1200px;
-margin: auto;
-font-size: 30px;
 
-}
 
 .headingContainerButton{
 width: 100%;
@@ -397,6 +393,13 @@ cursor: pointer;
 font-weight: bold;
 border:0;
 }
+.headingContainer{
+    max-width: 1200px;
+    margin: auto;
+    font-size: 30px;
+    
+
+} 
 /* puspal */
 
 
