@@ -33,6 +33,8 @@ Objective of this project is to make a website resembling the look and feel of t
 -screenshot of security page for mobile view:
 
 ![alt text](sp1.png) 
+
+
 ![alt text](sp2.png)
 
 ## **Teams Page**
