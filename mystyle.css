@@ -110,6 +110,7 @@
     border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
+    border:0px;
 }
 
 .dotImg {
@@ -184,6 +185,10 @@
     #rightLinks > a:nth-child(7){
         display: block;
     }
+    .dotImg > img{
+       display:none;
+    }
+    
 }
 
 /* features to middle */
