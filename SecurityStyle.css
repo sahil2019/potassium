@@ -317,8 +317,9 @@
 .greyContainerBottom{
     background-color: whitesmoke;
     width: 100%;
-    padding: 2%;
-    /* border: 1px solid red; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
 }
 .greySubBottom{
     margin: auto;
